@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>OpenMind Academy</title> <!-- the content here will only show in the tab and in the metadata about the page -->
+  <link rel="icon" href="image/book.webp">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Part 1: Navbar Starter Code -->
+
+  <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="https://www.nea.org/professional-excellence/student-engagement/read-across-america/support-your-readers/free-materials" target="_blank">Resources</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#About">About</a></li>
+      <li ><button id="theme-button">Toggle Dark Mode</button></li>
+      <li ><button id="reduce-motion-button">Reduce Motion</button></li>
+      <!-- Stretch Challenge: Drop Down -->
+    </ul>
+  </div>
+
+
+
+  <!-- Part 2: Flexbox Layout Stater Code -->
+
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+
+
+  <!--- Headings --->
+  <!-- Header starts here -->
+  <div id="home" class="header-container">
+    <div class="header-img">
+      <img src="image/stackofbooks.jpg" width="500" height="300" />
+    </div>
+    <div class="header-text">
+      <h1>My Activism Project: OpenMind Academy</h1>
+      <h3 class ="header-text">Free Education opportunities available to all</h3>
+      <!-- Buttons if needed -->
+      <div class="header-buttons">
+        <a href="https://www.openculture.com/free_k-12_educational_resources" target="_blank"><button class="header-button" type="button">Explore Learning Resources</button></a>
+        <a href="https://www.nypl.org/about/remote-resources/kids-and-teens/homework-help-brainfuse" target="_blank">
+          <button class="header-button" type="button">Book a tutor</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- Header ends here -->
+
+  <!--- About --->
+  <div id="About">
+    <h2>About My Topic</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OsYhgLFP1IE?si=Jsw74dM_jNKioeA8"></iframe>
+    <p>There are many underpiveleged students and minorities that dont have access too educational resources. This is a problem because these underpriveleged students and minorities are not able to get the education they need to be able to get a job or get a better life. My Educational Outreach Program aims to close the gap between the priveleged and underpriveleged students by offering free educational resources to all students.</p>
+  </div>
+  
+  <!--- Impact --->
+  <div id="impact" class="revealable" >
+    <h2>Impact!</h2>
+
+    <img src="image/home.jpg" width="500" height="300" />
+    <h3>Homes</h3>
+    <p>This problem can have lasting effects on the students living in poverty because they are not able to get the
+      education they need to get a well paying job and get out of poverty.
+    </p>
+
+    <img src="image/college.jpg" width="500" height="300" />
+    <h3>Schools</h3>
+    <p>Lack of learning resources in college can make it difficult for people to fully complete university programs or
+      degrees.
+    </p>
+
+    <img src="image/workplace.jpg" width="500" height="300" />
+    <h3>Jobs</h3>
+    <p>Lack of learning resources makes it hard to complete an education and learn skills, which can make it hard for
+      people to get jobs
+    </p>
+  </div>
+  
+    <!-- Petition Section -->
+    <div class="petition revealable" id="petition">
+      <h2>Sign Our Petition 📢</h2>
+      <div class="petition-container">
+        <div class="petition-para">
+          <!-- Petition paragraph content -->
+          In our increasingly interconnected world, access to education stands as a pivotal right, yet remains a privilege far beyond the reach of many. This petition advocates for the creation of more accessible, free educational resources, aiming to bridge the vast chasm of educational inequality that persists across the globe. Education empowers individuals, fosters innovation, and cultivates communities that can face future challenges with resilience and creativity. By making educational resources freely available, we can unlock untapped potential in underprivileged communities, offering everyone the tools needed to build a brighter, more equitable future. Access to knowledge should not be gated behind financial barriers; it must be viewed as an essential, universal right that nurtures the growth of society as a whole. Join us in calling for policymakers, educational institutions, and digital platforms to collaborate in expanding the accessibility of educational resources, ensuring that learning knows no bounds.
+        </div>
+        <div class="signatures">
+          <!-- Signature list -->
+          <p>🖊️ DJ from Brooklyn supports this.</p>
+          <p>🖊️ Amy from Queens supports this.</p>
+          <p>🖊️ Teresa from Harlem supports this.</p>
+        </div>
+      </div>
+
+      <!-- Sign Petition Form -->
+      <form id="sign-petition" title="Sign the Petition">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="hometown">Hometown:</label>
+          <input type="text" id="hometown" name="hometown" placeholder="Enter your hometown" required>
+        </div>
+
+        <!-- Include additional fields as necessary -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        </div>
+
+        <!-- Sign Now Button -->
+        <button type="submit" id="sign-now-button">Sign Now</button>
+      </form>
+    </div>
+  
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <p> Thank you for signing the petition </p>
+        <!-- button here (stretch feature) -->
+      </div>
+      <img src="image/Thankyou.jpg" class="modal-image">
+    </div>
+
+  </div>
+  
+  <script src="index.js"></script>
+
+</body>
+
+</html>

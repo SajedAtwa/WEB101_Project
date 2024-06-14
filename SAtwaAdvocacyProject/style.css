@@ -1,0 +1,465 @@
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body {
+  /* Add a background color or image */
+  background-color:#f5f5f5;
+  background-image: url('');
+
+  /* Customize the font, size, and color for text*/
+  font-family: Arial;
+  font-size: 20px;
+  color: black;
+
+  /* Adjust the padding and margins */
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+
+}
+
+
+
+/*
+  Style Text: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+h1 {
+  background-color:transparent;
+  font-family: fantasy;
+  text-align: center;
+  margin-bottom: 10px;
+  color:white
+}
+
+h2 {
+  background-color: transparent;
+  font-family: fantasy;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  background-color:transparent;
+  font-family: fantasy;
+  text-align: center;
+  margin-bottom: 10px;
+  color:black
+}
+
+p {
+  font-family: Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+  text-align: center;
+  color: #080707;
+  margin-bottom: 50px;
+}
+
+/* Define style rules for links */
+a:link {
+  color: #2bf638;
+  /* Set color of unvisited links */
+  text-decoration: none;
+  /* Remove underline */
+  font-weight: bold;
+  /* Set font weight */
+}
+
+a:visited {
+  color: #1d177c;
+  /* Set color of visited links */
+}
+
+a:hover {
+  text-decoration: underline;
+  /* Add underline on hover */
+}
+
+a:active {
+  color: #acac22;
+  /* Set color of active links */
+}
+
+
+/*
+  Style Lists: Styles added to the ol or ul style rulesets affect the entire
+  list, while styles added to the li style ruleset affect individual list items
+*/
+
+
+/*ol {}
+
+ol li {}
+
+
+ul {}
+
+ul li {}
+*/
+
+/*
+  Style Buttons: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Increase shadow on hover */
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.
+
+/* Select and style elements by class name or ID */
+.important {
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  background-color: orange;
+  margin: 20px;
+  padding: 5px;
+}
+
+#interesting {
+  font-family: fantasy;
+}
+
+#header-white {
+  color:white
+}
+
+/* Example: This styles elements with class="header"*/
+/* Style for the header class */
+/* Header styles */
+.header-container {
+  background-color: #2C3E50;
+  display: flex; /* This turns .header-container into a flex container */
+  align-items: center; /* This will vertically center the items in the container */
+  justify-content: center; /* This will horizontally center the items */
+  padding: 20px; /* Add some padding */
+  text-align: left; /* Align the text to the left */
+}
+
+
+.header-item:nth-of-type(1) {
+  width: 35%;
+  /* Set width to 35% for the first flex-item */
+}
+
+.header-item:nth-of-type(2) {
+  width: 65%;
+  /* Set width to 65% for the second flex-item */
+}
+
+.header-img {
+  flex: 0 0 auto; /* Do not grow or shrink the image container */
+  margin-right: 20px; /* Add some space between image and text */
+}
+
+.header-img img {
+  width: auto; /* Keep the original image width */
+  width:350px; 
+  height:300px;
+  text-align: center;
+}
+
+.header-text {
+  color: white; /* Text color */
+  /* If you want to limit the width of the text: */
+  max-width: 600px; /* Adjust as needed */
+}
+
+.header-buttons {
+  display: flex; /* Optional: if you want to make buttons align side by side */
+  gap: 5px; /* Optional: adds space between buttons */
+}
+
+.header-button {
+  background-color:#FF6B6B;
+  border: none;
+  color: #060505;
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.header-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+  display: block; /* Makes the iframe a block-level element */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Part 1: Navbar */
+/* Navbar */
+.navbar {
+  background-color: #333;
+  padding: 5px 0;
+  position: fixed; /* Ensure navbar is always at the top */
+  width: 100%; /* Ensure navbar spans the entire width */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure navbar stays on top of other content */
+}
+
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox for centering and alignment */
+  align-items: center; /* Center items vertically */
+  width: 100%;
+}
+
+.navbar ul li {
+  display: inline-block; /* Maintain inline-block for horizontal list */
+  margin: 0 5px; /* Adjust spacing around each list item */
+}
+
+.navbar ul li a {
+  font-family: Arial;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px 15px;
+  display: block; /* Ensure links take up the full space for better clickability */
+  text-align: center;
+}
+
+.navbar ul li a:hover {
+  font-weight: bold;
+  background-color: #555;
+}
+
+
+
+/* Part 2: Flexbox */
+
+/* General style rule set for flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+/* Style rules for flex-item 1 */
+.flex-item:nth-of-type(1) {}
+
+/* Style rules for flex-item 2 */
+.flex-item:nth-of-type(2) {}
+
+/* Style rules for flex-item 3 */
+.flex-item:nth-of-type(3) {}
+
+
+/* Style set for all flex-items */
+.flex-item {
+  background-color: #2b4ff4;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Example: This styles an element with an id="header-img" */
+
+/* Add style to button */
+#theme-button {
+    background-color: #4CAF50; /* Green background for visibility */
+    color: white; /* White text for contrast */
+    border: none; /* No border for a modern look */
+    padding: 10px 20px; /* Adequate padding for touch targets */
+    font-size: 16px; /* Readable font size */
+    cursor: pointer; /* Cursor change to indicate clickable item */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    border-radius: 5px; /* Slightly rounded corners for a softer look */
+    align-items: center;
+}
+
+#theme-button:hover, #reduce-motion-button:focus {
+  background-color: #45a049; /* A slightly darker green on hover/focus */
+  transform: scale(1.05); /* Slight grow effect on hover/focus */
+}
+
+.dark-mode {
+  background-color: #000; /* Set background to black */
+  color: #fff; /* Set text color to white for all text within the body */
+}
+
+/* Ensure all inherited text elements within the body also adopt the white text color */
+.dark-mode p, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6, .dark-mode a {
+  color: #fff; /* This ensures that specific elements also have the white text color */
+}
+
+/* Style rules for the petition container */
+.petition-container {
+  display: flex;        /* Enables flexbox layout */
+  flex-direction: row;  /* Arranges children in a row */
+  gap: 20px;            /* Sets a gap between flex items */
+  width: 100%;          /* Sets the width to take the full parent container */
+  padding-bottom: 50px; /* Adds padding at the bottom */
+}
+
+/* Style rules for the paragraph inside the petition container */
+.petition-para {
+  width: 55%;           /* Sets the width to 55% of its parent container */
+  padding-right: 10px;  /* Adds padding to the right */
+}
+
+/* Style rules for the signatures list inside the petition container */
+.signatures {
+  width: 45%;           /* Sets the width to 45% of its parent container */
+  padding-right: 10px;  /* Adds padding to the right */
+}
+
+#sign-petition {
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap; /* Wrap items to next line if not enough space */
+  align-items: center; /* Align items vertically */
+  gap: 10px; /* Add some space between the form elements */
+}
+
+#sign-petition label {
+  margin-right: 5px; /* Add some space to the right of the label */
+}
+
+#sign-petition input {
+  margin-right: 10px; /* Add some space to the right of the input */
+}
+
+#sign-now-button {
+  padding: 10px 15px; /* Adjust padding for better look */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add pointer on hover */
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color:#005B5B;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#reduce-motion-button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* A nice green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.1s;
+  margin-left: auto; /* If inside a flex container, this will align the button to the right */
+}
+
+#reduce-motion-button:hover, #reduce-motion-button:focus {
+  background-color: #45a049; /* A slightly darker green on hover/focus */
+  transform: scale(1.05); /* Slight grow effect on hover/focus */
+}
+
+#reduce-motion-button:active {
+  transform: scale(0.95); /* Slight shrink effect when the button is clicked */
+  box-shadow: none; /* Remove shadow to simulate pressing down */
+}
+
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.modal-image {
+  animation: rotateAnimation 2s linear infinite;
+}
+
+
